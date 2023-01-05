@@ -77,8 +77,9 @@ const handleSubmit = async (e) => {
 
   // fetch response from server - bot response
   // http://localhost:5023
-  
-  const response = await fetch('https://codex-6pvs.onrender.com/', {
+  //https://codex-6pvs.onrender.com/
+  const serverurl = 'https://codex-6pvs.onrender.com/'
+  const response = await fetch(serverurl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
